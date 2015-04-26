@@ -1,10 +1,12 @@
 package fluxx.card;
 
 import android.media.Image;
+
+import fluxx.Game;
 /**
  * Created by Thomas on 4/24/2015.
  */
-public class RuleCard extends FluxxCard {
+public abstract class Action extends Card {
 
 	/* ------------------------------------ Instance Variables ---------------------------------- */
 
@@ -12,38 +14,26 @@ public class RuleCard extends FluxxCard {
 
 	/* ---------------------------------------- Constructors ------------------------------------ */
 
-	/**
-	 *
-	 */
-	public RuleCard() {
+	public Action() {
 		super();
-		super.setType( CARD_TYPE.RULE );
 	}
 
-	/**
-	 *
-	 * @param name
-	 */
-	public RuleCard( String name ) {
-		super( name );
-		super.setType( CARD_TYPE.RULE );
+	public Action( String name, String use, String effect, Game game ) {
+		super( name, use, effect, game );
 	}
 
-	/**
-	 *
-	 * @param name
-	 * @param use
-	 * @param effect
-	 * @param image
-	 */
-	protected RuleCard( String name, String use, String effect, Image image ) {
-		super( name, use, effect, image );
-		super.setType( CARD_TYPE.RULE );
+	public Action( String name, String use, String effect, Image image, Game game ) {
+		super( name, use, effect, image, game );
 	}
 
 	/* ------------------------------------------- Methods -------------------------------------- */
 
+	public abstract void doAction();
 
+	public void play() {
+		this.doAction();
+		this.discard();
+	}
 
 	/* ------------------------------------- Getters & Setters ---------------------------------- */
 

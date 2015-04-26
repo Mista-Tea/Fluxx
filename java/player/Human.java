@@ -3,10 +3,11 @@ package fluxx.player;
 import java.util.ArrayList;
 
 import fluxx.card.Card;
+
 /**
  * Created by Thomas on 4/25/2015.
  */
-public class Human implements Player {
+public class Human implements Playable {
 
 	public Player choosePlayer( ArrayList<Player> players ) {
 		// TODO
