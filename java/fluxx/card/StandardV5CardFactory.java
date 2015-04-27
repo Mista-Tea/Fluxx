@@ -20,7 +20,7 @@ public class StandardV5CardFactory extends CardFactory {
 		cards.add( new Keeper( "Milk", 			"I've got the Milk, now where are the cookies?" ) );
 		cards.add( new Keeper( "The Eye", 		"An unsightly thing, to be sure" ) );
 		cards.add( new Keeper( "The Brain", 	"If only I had a brain..." ) );
-		cards.add( new Keeper( "TheMoon", 		"Shh! Was that a wolf howling?" ) );
+		cards.add( new Keeper( "The Moon", 		"Shh! Was that a wolf howling?" ) );
 		cards.add( new Keeper( "Chocolate", 	"Valentine's day already?" ) );
 		cards.add( new Keeper( "Dreams", 		"Everyone's got one, but very few make them real" ) );
 		cards.add( new Keeper( "Time", 			"I haven't got enough time on this project!" ) );
