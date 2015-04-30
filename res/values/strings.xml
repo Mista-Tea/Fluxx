@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fluxx</string>
+
+    <string name="search_button">Search for Game</string>
+    <string name="host_button">Host Game</string>
+    <string name="settings_button">Settings</string>
+    <string name="clicked">Clicked</string>
+    <string name="player_numbers">Test</string>
+</resources>
